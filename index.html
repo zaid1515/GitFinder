@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>GitFinder</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     <header class="container mt-3 mb-3">
+          <h1>GitFinder</h1>
+          <div class="form-group">
+               <label for="username">Username:</label>
+               <input type="text" class="form-control" id="username" placeholder="Enter GitHub username">
+               <button class="btn btn-primary m-2" id="search">Search</button>
+          </div>
+          <div id="user-info" class="mt-2">
+               <img src="" alt="User Photo" id="user-photo" class="img-fluid rounded-circle" style="max-width: 100px;">
+               <div>
+                    <p id="name-user"> </p>
+                    <p id="user-bio" > </p>
+                    <p id="user-link"> </p>
+               </div>
+          </div>
+     </header>
+
+     <div class="container container1">
+          <div id="repository-list" class="mb-4">
+          </div>
+
+          <div id="loader" class="text-center">
+               <div class="spinner-border text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+               </div>
+          </div>
+
+     </div>
+     <nav aria-label="Page navigation">
+          <ul class="pagination">
+          </ul>
+     </nav>
+     <div class="repos"><span class="repo-txt">No. of Repositories:</span><input type="number" name="repos" id="repos" class="form-control">
+          <button class="btn btn-primary" id="enter">Enter</button>
+     </div>
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     <script src="app.js"></script>
+</body>
+
+</html>
